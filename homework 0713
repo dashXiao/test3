@@ -1,0 +1,18 @@
+//定义Student类
+
+#import <Foundation/Foundation.h>
+
+@interface Student : NSObject
+        
+    @property(nonatomic,copy)NSString *name;
+    @property(nonatomic,copy)NSString *major;
+    @property(nonatomic,assign)NSUInteger age;
+    - (void)study:(CGFloat)time;
+    @end
+        
+#import "Student.h"
+@implementation Student
+-(void)study:(CGFloat)time{
+    NSLog(@"The student has learned %f hours",time);
+}
+@end
